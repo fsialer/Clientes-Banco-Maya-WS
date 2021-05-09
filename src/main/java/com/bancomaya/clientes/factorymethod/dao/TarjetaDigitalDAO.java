@@ -1,14 +1,11 @@
-package com.bancomaya.clientes;
+package com.bancomaya.clientes.factorymethod.dao;
 
 import java.util.List;
 
-import javax.jws.WebService;
-
 import com.bancomaya.clientes.factorymethod.entity.TarjetaDigital;
 
-@WebService
-public interface TarjetaDigitalService {
-	public TarjetaDigital crearTarjetaDigital(TarjetaDigital tarjetaDigital);
+public interface TarjetaDigitalDAO {
+	public TarjetaDigital guardarTarjetaDigital(TarjetaDigital tarjetaDigital);
 	
 	public List<TarjetaDigital> obtenerTarjetaDigitales();
 	
